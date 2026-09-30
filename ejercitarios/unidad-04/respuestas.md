@@ -9,24 +9,24 @@
 **1. Define en tus propias palabras qué es la ingeniería de requerimientos.**
 
 _Respuesta:_
-
+Es el proceso mediante el cual se descubre, analiza, documenta y gestiona lo que un sistema de software debe hacer y las restricciones bajo las que debe operar, trabajando junto a los usuarios y demás interesados (stakeholders) para entender sus necesidades antes de construir el sistema. Incluye actividades como la obtención (elicitación), el análisis, la especificación y la validación de esos requerimientos.
 
 **2. Explica la diferencia entre "requerimiento", "especificación de requisitos" e "ingeniería de requisitos", con un ejemplo de cada uno.**
 
 _Respuesta:_
 
-
----
-
+- Requerimiento: es una necesidad o condición individual que el sistema debe cumplir. Ejemplo: "El sistema debe permitir al usuario recuperar su contraseña por email."
+- Especificación de requisitos (documento): es el documento formal donde se recopilan, organizan y describen de manera estructurada todos los requerimientos del sistema (a veces llamado SRS, Software Requirements Specification). Ejemplo: un documento de 30 páginas que detalla todos los requerimientos funcionales y no funcionales de un sistema de biblioteca.
+- Ingeniería de requisitos: es el proceso completo —todas las actividades (obtención, análisis, especificación, validación, gestión)— que lleva a producir y mantener esa especificación. Ejemplo: las reuniones, entrevistas y talleres que un equipo realiza durante dos semanas para definir qué necesita un cliente antes de escribir el SRS.
 ## Tema 2 · Tipos de requerimientos
 
 **3. Ejercicio de relación** (completen con el número que corresponda a cada letra):
 
 | Tipo de requerimiento | Descripción |
 |---|---|
-| A. Funcional | ___ |
-| B. No funcional | ___ |
-| C. Del dominio | ___ |
+| A. Funcional | 2 |
+| B. No funcional | 3 |
+| C. Del dominio | 1 |
 
 1. Proviene de las reglas o restricciones propias del área o dominio de negocio.
 2. Describe una función o servicio concreto que el sistema debe realizar.
@@ -36,16 +36,19 @@ _Respuesta:_
 
 | Aspecto | Requerimientos de usuario | Requerimientos de sistema |
 |---|---|---|
-| Audiencia principal | | |
-| Nivel de detalle | | |
-| Lenguaje utilizado | | |
+| Audiencia principal |Clientes, usuarios finales, gerentes (no tecnicos)|Desarrolladores,ingenieros, arquitectos |
+| Nivel de detalle |General, de alto nivel |Detallado y preciso |
+| Lenguaje utilizado |Lenguaje natural, sin jerga tecnica |Lenguaje tecnico y estructurado |
 
 **5. Elegí un sistema que conozcas (una app, una plataforma, un sistema de tu universidad o trabajo) y da un ejemplo propio de un requerimiento funcional y uno no funcional para ese mismo sistema.**
 
 _Respuesta:_
 
-
+Tomando como ejemplo una app de delivery de comida:
 ---
+**Requerimiento funcional:** "El sistema debe permitir al usuario rastrear en tiempo real la ubicación del repartidor en un mapa."
+**Requerimiento no funcional:** "El sistema debe cargar el mapa de rastreo en menos de 2 segundos con conexión 4G."
+
 
 ## Tema 3 · Características de los requerimientos
 
@@ -53,15 +56,15 @@ _Respuesta:_
 
 | Característica | Pregunta que permite verificarla |
 |---|---|
-| Correcto | |
-| No ambiguo | |
-| Completo | |
-| Verificable | |
+| Correcto | ¿El requerimiento representa realmente una necesidad del usuario? |
+| No ambiguo | ¿El requerimiento puede interpretarse de una sola manera? |
+| Completo | ¿Contiene toda la información necesaria para entenderlo? |
+| Verificable | ¿Se puede comprobar mediante una prueba si se cumple? |
 
 **7. Tomá el requerimiento "El sistema debe ser rápido" y reescribilo de forma que cumpla con las características de un buen requerimiento vistas en clase.**
 
 _Respuesta:_
-
+El sistema debe responder a las solicitudes de los usuarios en un máximo de 2 segundos bajo condiciones normales de uso.
 
 ---
 
@@ -70,15 +73,18 @@ _Respuesta:_
 **8. Enumera las cuatro etapas del ciclo de obtención y análisis de requerimientos vistas en clase.**
 
 _Respuesta:_
-
+1. **Descubrimiento de requerimientos:** obtener información de los usuarios y demás interesados.
+2. **Clasificación y organización:** agrupar y ordenar los requerimientos según sus características.
+3. **Priorización y negociación:** determinar cuáles son más importantes y resolver posibles conflictos.
+4. **Especificación:** documentar los requerimientos de forma clara y detallada.
 
 **9. Ejercicio de relación** (completen con el número que corresponda a cada letra):
 
 | Técnica de obtención | Situación en que conviene usarla |
 |---|---|
-| A. Entrevistas | ___ |
-| B. Observación | ___ |
-| C. Talleres / workshops | ___ |
+| A. Entrevistas | 3 |
+| B. Observación | 1 |
+| C. Talleres / workshops | 2 |
 
 1. Cuando el usuario no puede verbalizar fácilmente lo que necesita.
 2. Cuando hay varios interesados con visiones distintas que negociar.
@@ -92,10 +98,10 @@ _Respuesta:_
 
 | Técnica | Ventaja | Limitación |
 |---|---|---|
-| Lenguaje natural estructurado | | |
-| Casos de uso | | |
-| Historias de usuario | | |
-| Diagramas (UML) | | |
+| Lenguaje natural estructurado |Es fácil de entender para usuarios y desarrolladores, ya que utiliza un lenguaje cercano al cotidiano pero con una estructura definida.|Puede generar ambigüedades si los requisitos no se redactan con suficiente precisión.  |
+| Casos de uso | Permiten describir claramente cómo un usuario interactúa con el sistema para alcanzar un objetivo | Pueden volverse extensos y complejos cuando el sistema tiene muchas funcionalidades o actores |
+| Historias de usuario | Son breves y fáciles de comprender, y permiten centrarse en las necesidades y objetivos del usuario.| Pueden ser demasiado generales y no especificar todos los detalles técnicos necesarios para implementar el requisito |
+| Diagramas (UML) | Permiten representar visualmente la estructura y comportamiento del sistema, facilitando su comprensión| Requieren conocimientos de UML y algunos diagramas pueden resultar difíciles de interpretar para usuarios no técnicos. |
 
 ---
 
@@ -103,8 +109,8 @@ _Respuesta:_
 
 **11. ¿Qué es una especificación formal y en qué tipo de sistemas se justifica su uso? Da un ejemplo hipotético de un sistema donde la usarías.**
 
-_Respuesta:_
-
+_Respuesta:_ es una descripcion matematica de las propiedades y el comportamiento de un sistema, definida mediante un lenguaje formal con sitaxis y semanticas precisas, que especifica que debe hacer el sistema sin detallar como se implementa. El uso de una especificacion formal se justifica principalmente en sistemas criticos donde el costo de fallos es alto o existen riesgos para la seguridad y la integridad. 
+Ej.: en un entorno aeroespacial y defensa, como lo pueden ser las misiones de la NASA, donde los errores pueden resultar en la perdida de equipos valiosos o perdida de vidas humanas.
 
 ---
 
@@ -112,7 +118,9 @@ _Respuesta:_
 
 **12. Explica la diferencia entre un prototipo desechable y un prototipo evolutivo, con un ejemplo de un proyecto donde usarías cada uno.**
 
-_Respuesta:_
+_Respuesta:_ un prototipo desechable cumple una determinada funcion, como lo es la de validar y clarificar los requisitos poco comprendidos del sistema, con una calidad baja y un desempeño pobre ya que luego de cumplir con su funcion se descarta, en cambio un prototipo evolutivo se usa para convertirse progresivamente en el sistema final al refinarse iterativamente hasta llegar al producto definido, debe cumplir con los estandares de calidad del software de produccion usando los requisitos mejor conocidos y va creciendo hasta una funcionalidad total.
+
+Un ejemplo de un prototipo desechable serian los bocetos en papel de interfaces de usuario y prueba de validacion temprana de diseños en etapas conceptuales, y un prototipo evolutivo se puede usar para el desarrollo de una plataforma como comercio electronico web con requisitos cambiantes para reducir el riesgo de trabajo doble.
 
 
 ---
@@ -122,7 +130,8 @@ _Respuesta:_
 **13. Menciona dos técnicas de construcción rápida de prototipos vistas en clase y explica brevemente en qué consiste cada una.**
 
 _Respuesta:_
-
+1. Prototipo desechable: se crea una versión sencilla del sistema para probar ideas y luego se descarta.
+2. Prototipo evolutivo: se crea una versión inicial que se va mejorando hasta convertirse en el sistema final.
 
 ---
 
@@ -132,9 +141,9 @@ _Respuesta:_
 
 | Técnica de validación | Qué tipo de problema detecta mejor |
 |---|---|
-| Revisiones de requisitos | |
-| Prototipado | |
-| Generación de casos de prueba | |
+| Revisiones de requisitos | Errores, contradicciones y ambigüedades en los requerimientos |
+| Prototipado | Problemas de usabilidad y necesidades que no fueron comprendidas correctamente |
+| Generación de casos de prueba | Requerimientos que no se pueden comprobar o que no se cumplen |
 
 ---
 
@@ -143,6 +152,7 @@ _Respuesta:_
 **15. Explica con tus palabras qué es la trazabilidad de requerimientos y por qué es importante en un proyecto real.**
 
 _Respuesta:_
+La trazabilidad es la capacidad de seguir cada requerimiento desde su origen hasta su implementación y pruebas. Es importante porque permite controlar los cambios y comprobar que todos los requerimientos se cumplan.
 
 
 ---
@@ -152,8 +162,12 @@ _Respuesta:_
 **16. Menciona dos métricas que se pueden aplicar a los requerimientos de un proyecto y qué información le aporta cada una al equipo.**
 
 _Respuesta:_
+Cantidad de requerimientos: indica cuántos requerimientos tiene el proyecto y ayuda a estimar su tamaño.
+
+Porcentaje de requerimientos cumplidos: indica cuántos requerimientos fueron implementados y permite medir el avance del proyecto.
 
 
 **17. Reflexión final:** pensá en un proyecto de software (hipotético o real). Describí qué técnica de obtención, qué técnica de especificación y qué técnica de validación usarías para sus requerimientos, y justificá tu elección considerando el tipo de proyecto y de usuarios.
 
 _Respuesta:_
+Para un sistema de gestión de un gym, utilizaría las entrevistas para conocer las necesidades de entrenadores y administradores, las historias de usuario para describir los requerimientos de forma sencilla, y el prototipado para comprobar si el sistema es fácil de usar. Elegiría estas técnicas porque permiten conocer las necesidades específicas de los usuarios (reservas de clases, membresías, pagos) y mejorar el sistema antes de su implementación final.
