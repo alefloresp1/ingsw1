@@ -172,4 +172,3 @@ Surgen nuevas exigencias de facturación y de protección de datos que obligan a
 <p><strong>14. Reflexión final:</strong> de todo lo visto en clase (definición, historia, rol del ingeniero, ciclo del software, relación con otras áreas y disciplinas, e impacto de la IA), ¿qué idea te resultó más relevante y por qué?</p>
 <p><em>Respuesta:</em>
 La idea más relevante es que la ingeniería de software no se limita a programar, sino que abarca análisis, diseño, pruebas, mantenimiento y ética profesional. Para el sistema de gestión de gimnasio esto es crucial: el ingeniero debe garantizar que el sistema sea confiable, seguro y sostenible en el tiempo, porque de él dependen los cobros del negocio y los datos de los socios.</p>
-
